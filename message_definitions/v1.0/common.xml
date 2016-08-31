@@ -2249,6 +2249,38 @@
           </enum>
      </enums>
      <messages>
+          <message id="150" name="SIMULINK">
+               <description>Simulink simulator message.</description>
+               <field type="uint64_t" name="time_usec">Timestamp</field>
+               <field type="uint64_t" name="counter">Debug counter</field>
+               <field type="float" name="stick_input0">Stick0</field>
+               <field type="float" name="stick_input1">Stick1</field>
+               <field type="float" name="stick_input2">Stick2</field>
+               <field type="float" name="stick_input3">Stick3</field>
+               <field type="float" name="stick_input4">Stick4</field>
+               <field type="float" name="pos_x">local x NED</field>
+               <field type="float" name="pos_y">local y NED</field>
+               <field type="float" name="pos_z">local z NED</field>
+               <field type="float" name="v_x">local vx NED</field>
+               <field type="float" name="v_y">local vy NED</field>
+               <field type="float" name="v_z">local vz NED</field>
+               <field type="float" name="roll">roll</field>
+               <field type="float" name="pitch">pitch</field>
+               <field type="float" name="yaw">yaw</field>
+               <field type="float" name="rollspeed">rollspeed</field>
+               <field type="float" name="pitchspeed">pitchspeed</field>
+               <field type="float" name="yawspeed">yawspeed</field>
+               <field type="float" name="signal_1">misc. signals</field>
+               <field type="float" name="signal_2">misc. signals</field>
+               <field type="float" name="signal_3">misc. signals</field>
+               <field type="float" name="probe_1">misc. signals</field>
+               <field type="float" name="probe_2">misc. signals</field>
+               <field type="float" name="probe_3">misc. signals</field>
+               <field type="float" name="probe_4">misc. signals</field>
+               <field type="float" name="probe_5">misc. signals</field>
+               <field type="float" name="probe_6">misc. signals</field>
+           </message>
+
           <message id="0" name="HEARTBEAT">
                <description>The heartbeat message shows that a system is present and responding. The type of the MAV and Autopilot hardware allow the receiving system to treat further messages from this system appropriate (e.g. by laying out the user interface based on the autopilot).</description>
                <field type="uint8_t" name="type">Type of the MAV (quadrotor, helicopter, etc., up to 15 types, defined in MAV_TYPE ENUM)</field>
